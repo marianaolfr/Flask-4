@@ -1,0 +1,67 @@
+/* Redefinir estilos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+/* Corpo da página */
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Cabeçalho */
+.navbar {
+	border: 1px solid transparent;
+	background-color: #222;
+	border-color: #080808;
+	color: #9d9d9d;
+	width: 100%;
+}
+
+.navbar-brand:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+	.navbar-collapse {
+		background-color: #222;
+		border-top: 1px solid #080808;
+		padding: 15px 0;
+	}
+
+	.navbar-nav {
+		margin: 0;
+		display: block;
+		text-align: center;
+	}
+
+	.navbar-nav > li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.navbar-toggle {
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 8px;
+		margin-right: 0;
+	}
+}
